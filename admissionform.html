@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="aboutus.css" />
+    <link rel="stylesheet" href="notice.css" />
+    <link rel="stylesheet" href="admissionform.css" />
+  </head>
+  <body>
+
+
+  
+    <div id="loading-screen" class="loading-screen">
+      <div class="loader">
+        <img src= "image/collegelogo.png" />
+    </div>
+  </div>
+
+    <span class="up-arrow">
+      <a  class="up" href="#"><i class="fa-solid fa-up-long"></i></a>
+    </span>
+
+    <div class="home">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#">
+            <img src="image/collegelogo.png" alt="clglogo" />
+          </a>
+        </div>
+        <div class="icon-content">
+          <div class="icons">
+            <a href="index.html" class="icon">Home</a>
+            <a href="cource.html" class="icon">Cource</a>
+            <a href="aboutus.html" class="icon">About us</a>
+            <a href="noticevg.html" class="icon activeicon">Notice</a>
+            <a href="contactus.html" class="icon">Contact us</a>
+            
+              <a href="#" class="pp">
+                <i class="fa-solid fa-user icon" style="font-weight: bold;"></i>
+              </a>
+          </div>    
+          <div class="menu" onclick="showsidebar()">
+            <a href="#" class="menu-icon">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+
+      <ul class="sidebar">
+        <!-- Profile Icon on the left, Close button on the right -->
+        <li class="top-icons">
+            <!-- Profile Icon (left) -->
+            <a href="#" class="profile-icon">
+                <i class="fa-solid fa-user icon1"></i>
+            </a>
+    
+            <!-- Close Button (right) -->
+            <a class="closesidebar" onclick="closesidebar()" href="#">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </a>
+        </li>
+    
+        <!-- Navigation Links -->
+        <li><a href="index.html" class="icon1 ">Home</a></li>
+        <li><a href="course.html" class="icon1">Course</a></li>
+        <li><a href="aboutus.html" class="icon1">About Us</a></li>
+        <li><a href="noticevg.html" class="icon1 activeicon">Notice</a></li>
+        <li><a href="contactus.html" class="icon1">Contact Us</a></li>
+        
+   
+   
+     <!-- Footer section with contact icons and copyright at the bottom -->
+<div class="sidebar-footer">
+  <!-- Contact Icons container -->
+  <div class="contact-icons">
+      <a href="tel:+1234567890" class="contact-icon">
+          <i class="fa-solid fa-phone"></i>
+      </a>
+      <a href="https://wa.me/1234567890" class="contact-icon" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="mailto:info@vgcollege.com" class="contact-icon">
+          <i class="fa-solid fa-envelope"></i>
+      </a>
+  </div>
+
+  <!-- Copyright text -->
+  <p class="copyright-text">
+      All rights reserved by VG College <br>
+      <span class="designed-by">Designed by </span><span class="brandwave">Brandwave family</span>
+  </p>
+</div>
+
+
+    </ul>
+
+    
+
+
+      <!--menu icon for mobile  view-->
+      <div class="first">
+        <a href="#" class="firsticon">
+          <div class="lines">
+            <a href="#" class="logo" onclick="showsidebar()">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
+        </a>
+      </div>
+      </div>
+    </div>
+
+
+    
+    
+      
+      <div class="admission-container">
+        
+        <form id="admissionForm">
+    
+            <!-- Step 1: Admission Checklist -->
+            <div class="admission-form-section active">
+                <h2>Admission Checklist</h2>
+                <p>Please use the checklist to ensure all documents are prepared:</p>
+                <ul>
+                    <li>Two passport-size digital photos</li>
+                    <li>Copy of all academic certificates</li>
+                    <li>Identity card (e.g., Citizenship ID)</li>
+                </ul>
+                <div class="admission-form-navigation">
+                    <button type="button" onclick="nextSection()">Next</button>
+                </div>
+            </div>
+    
+            <!-- Step 2: Personal Details -->
+            <div class="admission-form-section">
+                <h2>Personal Details</h2>
+                <div class="admission-form-row">
+                    <div class="admission-form-group">
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="admission-form-group">
+                        <label for="citizenshipNumber">Citizenship Number:</label>
+                        <input type="text" id="citizenshipNumber" name="citizenshipNumber" required>
+                    </div>
+                </div>
+                <div class="admission-form-row">
+                    <div class="admission-form-group">
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="admission-form-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                </div>
+                <div class="admission-form-row">
+                    <div class="admission-form-group">
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="admission-form-group">
+                        <label for="province">Province:</label>
+                        <input type="text" id="province" name="province" required>
+                    </div>
+                </div>
+                <div class="admission-form-row">
+                    <div class="admission-form-group">
+                        <label for="country">Country:</label>
+                        <input type="text" id="country" name="country" required>
+                    </div>
+                    <div class="admission-form-group">
+                        <label for="mobile">Mobile Number:</label>
+                        <input type="tel" id="mobile" name="mobile" required>
+                    </div>
+                </div>
+                <div class="admission-form-row">
+                    <div class="admission-form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="admission-form-navigation">
+                    <button type="button" onclick="prevSection()">Back</button>
+                    <button type="button" onclick="nextSection()">Next</button>
+                </div>
+            </div>
+    
+            <!-- Step 3: Course Selection and Previous Education -->
+            <div class="admission-form-section">
+                <h2>Course Selection & Previous Education</h2>
+                <div class="admission-form-row">
+                    <div class="admission-form-group">
+                        <label for="course">Choose Course:</label>
+                        <select id="course" name="course" required>
+                            <option value="">Select a course</option>
+                            <option value="course1">Course 1</option>
+                            <option value="course2">Course 2</option>
+                        </select>
+                    </div>
+                    <div class="admission-form-group">
+                        <label for="previousEducation">Previous Education:</label>
+                        <input type="text" id="previousEducation" name="previousEducation" required>
+                    </div>
+                </div>
+                <div class="admission-form-row">
+                    <div class="admission-form-group">
+                        <label for="parentName">Parent's Name:</label>
+                        <input type="text" id="parentName" name="parentName" required>
+                    </div>
+                    <div class="admission-form-group">
+                        <label for="parentContact">Parent's Contact:</label>
+                        <input type="tel" id="parentContact" name="parentContact" required>
+                    </div>
+                </div>
+                <div class="admission-form-row">
+                    <div class="admission-form-group">
+                        <label for="profilePhoto">Upload Profile Photo:</label>
+                        <input type="file" id="profilePhoto" name="profilePhoto" required>
+                    </div>
+                </div>
+                <div class="admission-form-navigation">
+                    <button type="button" onclick="prevSection()">Back</button>
+                    <button type="button" onclick="nextSection()">Next</button>
+                </div>
+            </div>
+    
+            <!-- Step 4: Submission -->
+            <div class="admission-form-section">
+                <h2>Review & Submit</h2>
+                <p>Thank you for completing the form. Please review all information before submission.</p>
+                <div class="admission-form-navigation">
+                    <button type="button" onclick="prevSection()">Back</button>
+                    <button type="submit">Submit Application</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    
+
+    
+
+
+    <div class="about-subscribe">
+      <div class="subscribe-content">
+        <div class="subscribe-video">
+          <video autoplay  controls muted class="subscribe-clips">
+            <source src="videos/video2.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="subscribe-form">
+        <div class="subscribe-text">
+          <div class="par sub"><p><bl>Subscribe To</bl><o>VG <bl>College</bl></o></p></div>
+          <div class="par nf">Don't Miss Out Any Notification</div>
+          <div class="get-email par">
+            <input type="text" name="" placeholder="Enter your Email">
+            <div class="subscribe-icon">
+              <a class="subscribe-click" href="#">SUBSCRIBE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+
+    
+      <div class="about-info">
+        <div class="contact-info">
+          <div class="touch"><p><bl>GET <o>IN </o> TOUCH</bl></p></div>
+          <div class="location info-icon">
+            <div class="location-icon ic"><i class="fa-solid fa-location-dot "></i></div>
+            <div class="location-no">Biratnagar-3,Nepal</div>
+          </div>
+          <div class="phone info-icon">
+            <div class="phone-icon ic"><i class="fa-solid fa-phone  "></i></div>
+            <div class="phone-no">(+977) 476346347</div>
+          </div>
+          <div class="mail info-icon">
+            <div class="mail-icon ic"><i class="fa-regular fa-envelope "></i></div>
+            <div class="mail-no">abc123@gmail.com</div>
+          </div>
+          <div class="follow-us">
+              <div class="fb"><a href="#"><i class="fa-brands fa-square-facebook"></i></a></div>
+              <div class="insta"><a href="#"><i class="fa-brands fa-square-instagram"></i></a></i></div>
+              <div class="x"><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></i></div>
+          </div>
+        </div>
+        <div class="link-info">
+          <div class="link-info-header"><BL>QUICK </BL><o>LINKS</o></div>
+          <div class="link-info-content">
+            <a href="index.html" class="icon-link">home</a>
+            <a href="course.html" class="icon-link">cource</a>
+            <a href="aboutus.html" class="icon-link">About us</a>
+            <a href="contactus.html" class="icon-link">Contact us</a>
+            <a href="noticevg.html" class="icon-link">Notice</a>
+        </div>
+        </div>
+        <div class="login-info">
+          <div class="login-header"><p><bl>ADMIN </bl><o>LOGIN</o></p></div>
+          <div class="admin-box">
+            <input type="text" name="" placeholder="Email">
+            <input type="password" name="" placeholder="Password">
+            <div class="login"><a href="#" class="login-text">LOGIN</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+    <div class="footer-content">
+        <div class="map">
+            <div class="map-content">
+                <img src="image/map-content.png" alt="map">
+            </div>
+        </div>
+        <div class="image-footer">
+            <div class="image-content-footer">
+                <img src="image/collegelogo.png" alt="college logo">
+            </div>
+        </div>
+
+        <div class="image-footer">
+          <div class="image-content-footer">
+              <img src="image/collegelogo.png" alt="college logo">
+          </div>
+      </div>
+
+      <div class="image-footer">
+        <div class="image-content-footer">
+            <img src="image/collegelogo.png" alt="college logo">
+        </div>
+    </div>
+
+    <div class="image-footer">
+      <div class="image-content-footer">
+          <img src="image/collegelogo.png" alt="college logo">
+      </div>
+  </div>
+
+  <div class="image-footer">
+    <div class="image-content-footer">
+        <img src="image/collegelogo.png" alt="college logo">
+    </div>
+</div>
+
+    </div>
+    <div class="footer-text">
+        <div class="image-text">
+            &copy; VG COLLEGE, ALL RIGHTS RESERVED. DESIGNED BY BRANDWAVE
+        </div>
+    </div>
+</div>
+
+
+  </body>
+    
+
+  <script>
+    let currentSectionIndex = 0; // Keep track of the current section
+
+function nextSection() {
+    const sections = document.querySelectorAll('.admission-form-section');
+    if (currentSectionIndex < sections.length - 1) {
+        // Add sliding-out class to the current section
+        sections[currentSectionIndex].classList.add('sliding-out');
+        
+        // Wait for the animation to finish
+        setTimeout(() => {
+            sections[currentSectionIndex].classList.remove('active'); // Hide current section
+            sections[currentSectionIndex].classList.remove('sliding-out'); // Remove sliding-out class
+            
+            currentSectionIndex++; // Move to the next section
+            sections[currentSectionIndex].classList.add('active'); // Show the next section
+            sections[currentSectionIndex].classList.add('sliding-in'); // Add sliding-in animation
+            
+            // Remove sliding-in class after the animation
+            setTimeout(() => {
+                sections[currentSectionIndex].classList.remove('sliding-in'); // Clean up
+            }, 500); // Match this to the animation duration
+        }, 500); // Match this to the animation duration
+    }
+}
+
+function prevSection() {
+    const sections = document.querySelectorAll('.admission-form-section');
+    if (currentSectionIndex > 0) {
+        // Add sliding-out class to the current section
+        sections[currentSectionIndex].classList.add('sliding-out');
+        
+        // Wait for the animation to finish
+        setTimeout(() => {
+            sections[currentSectionIndex].classList.remove('active'); // Hide current section
+            sections[currentSectionIndex].classList.remove('sliding-out'); // Remove sliding-out class
+            
+            currentSectionIndex--; // Move to the previous section
+            sections[currentSectionIndex].classList.add('active'); // Show the previous section
+            sections[currentSectionIndex].classList.add('sliding-in'); // Add sliding-in animation
+            
+            // Remove sliding-in class after the animation
+            setTimeout(() => {
+                sections[currentSectionIndex].classList.remove('sliding-in'); // Clean up
+            }, 500); // Match this to the animation duration
+        }, 500); // Match this to the animation duration
+    }
+}
+
+</script>
+
+
+
+  <script src="script.js"></script>
+  <script src="aboutus.js"></script>
+  <script src="notice.js"></script>
+</html>

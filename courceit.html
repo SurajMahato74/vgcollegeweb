@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="aboutus.css" />
+    <link rel="stylesheet" href="notice.css" />
+    <link rel="stylesheet" href="cource.css" />
+
+    <style>
+    
+.cource {
+    margin-top: 20px; /* Adjust as necessary to create space */
+    clear: both; /* Ensures no float issues */
+    position: relative; /* To manage stacking context */
+    z-index: 1; /* To keep it above background layers */
+}
+
+.cource-content {
+    padding: 20px; /* Add padding to keep text away from edges */
+}
+
+/* Optional: Ensure video and overlay are not overlapping */
+.overlay {
+    position: relative;
+    z-index: 2; /* Ensure overlay is on top */
+}
+
+    </style>
+  </head>
+  <body>
+
+
+  
+    <div id="loading-screen" class="loading-screen">
+      <div class="loader">
+        <img src= "image/collegelogo.png" />
+    </div>
+  </div>
+
+    <span class="up-arrow">
+      <a  class="up" href="#"><i class="fa-solid fa-up-long"></i></a>
+    </span>
+
+    <div class="home">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#">
+            <img src="image/collegelogo.png" alt="clglogo" />
+          </a>
+        </div>
+        <div class="icon-content">
+          <div class="icons">
+            <a href="index.html" class="icon">Home</a>
+            <a href="course.html" class="icon activeicon">Cource</a>
+            <a href="aboutus.html" class="icon">About us</a>
+            <a href="noticevg.html" class="icon ">Notice</a>
+            <a href="contactus.html" class="icon">Contact us</a>
+            
+              <a href="#" class="pp">
+                <i class="fa-solid fa-user icon" style="font-weight: bold;"></i>
+              </a>
+          </div>    
+          <div class="menu" onclick="showsidebar()">
+            <a href="#" class="menu-icon">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+
+      <ul class="sidebar">
+        <!-- Profile Icon on the left, Close button on the right -->
+        <li class="top-icons">
+            <!-- Profile Icon (left) -->
+            <a href="#" class="profile-icon">
+                <i class="fa-solid fa-user icon1"></i>
+            </a>
+    
+            <!-- Close Button (right) -->
+            <a class="closesidebar" onclick="closesidebar()" href="#">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </a>
+        </li>
+    
+        <!-- Navigation Links -->
+        <li><a href="index.html" class="icon1 ">Home</a></li>
+        <li><a href="cource.html" class="icon1 activeicon">Course</a></li>
+        <li><a href="aboutus.html" class="icon1">About Us</a></li>
+        <li><a href="noticevg.html" class="icon1 ">Notice</a></li>
+        <li><a href="contactus.html" class="icon1">Contact Us</a></li>
+        
+   
+   
+     <!-- Footer section with contact icons and copyright at the bottom -->
+<div class="sidebar-footer">
+  <!-- Contact Icons container -->
+  <div class="contact-icons">
+      <a href="tel:+1234567890" class="contact-icon">
+          <i class="fa-solid fa-phone"></i>
+      </a>
+      <a href="https://wa.me/1234567890" class="contact-icon" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="mailto:info@vgcollege.com" class="contact-icon">
+          <i class="fa-solid fa-envelope"></i>
+      </a>
+  </div>
+
+  <!-- Copyright text -->
+  <p class="copyright-text">
+      All rights reserved by VG College <br>
+      <span class="designed-by">Designed by </span><span class="brandwave">Brandwave family</span>
+  </p>
+</div>
+
+
+    </ul>
+
+    
+
+
+      <!--menu icon for mobile  view-->
+      <div class="first">
+        <a href="#" class="firsticon">
+          <div class="lines">
+            <a href="#" class="logo" onclick="showsidebar()">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
+        </a>
+      </div>
+      </div>
+    </div>
+
+    <div class="main" style="margin-top: -60px;">
+      <div class="overlay">
+          <div class="blue-background"></div>
+          <video autoplay loop muted playsinline class="cource-video-content">
+              <source src="videos/video1.mp4" type="video/mp4" />
+          </video>
+          <div class="text">
+              <div class="t1">B.Sc. Computer System and Information Technology</div>
+              <div class="t2">Home/Courses/BSC.IT</div>
+              <div class="t3"><a href="admissionform.html">GET ADMISSION</a></div>
+          </div>
+      </div>
+  </div>      
+
+  <div class="cource">
+    <div class="cource-content">
+        <div class="cource-header"><bl>B.SC. <o>COMPUTER SYSTEM</o> AND INFORMATION <O>TECHNOLOGY</O></bl></div>
+        <div class="image-container"><img src="image/cource-image.jpg" alt="Course Image"></div>
+        <div class="text-content">
+            <p>
+              The BSc in Computer Science and Information Technology at VG College, delivered in collaboration with RJU 
+              University, Nepal, offers a comprehensive curriculum designed to equip students with essential skills in 
+              the rapidly evolving tech landscape. In addition to foundational topics in software engineering, networking, 
+              and data technology, the program places a strong emphasis on cutting-edge areas such as artificial intelligence, 
+              Android mobile development, and information systems. This diverse curriculum not only prepares students for 
+              technical challenges but also fosters
+               critical thinking and problem-solving abilities, essential for success in various industries.
+            
+           
+            Furthermore, students will engage in practical projects and internships, allowing them to apply their 
+            knowledge in real-world settings. This hands-on experience enhances their learning and prepares them for the 
+            demands of the job market. With a focus on both theoretical understanding and practical application, the program 
+            aims to cultivate well-rounded professionals who are capable of innovating and adapting in an ever-changing 
+            technological environment. Whether aspiring to work in software development, data analysis, or IT management, 
+            graduates will be well-equipped to make significant contributions to their chosen fields.
+           </p>
+         
+        </div>
+
+
+
+    </div>
+
+    <div class="cource-description">
+      <div class="name"><bl>B.Sc. Computer System and Information Technology</bl></div>
+      <div class="boxes">
+        <div class="quick"><o>Quick Information</o></div>
+      </div>
+      <div class="boxes">
+        <div class="phone-icon ic"><i class="fa-solid fa-calendar-days"></i></div>
+        <div class="box-text"><p>Total Semester : 8</p></div>
+      </div>
+      <div class="boxes">
+        <div class="phone-icon ic"><i class="fa-solid fa-calendar-days"></i></div>
+        <div class="box-text"><p>Duration : 4 Year</p></div>
+      </div>
+      <div class="boxes">
+        <div class="phone-icon ic"><i class="fa-solid fa-calendar-days"></i></div>
+        <div class="box-text"><p>Total Credit : 120 ECT</p></div>
+      </div>
+      <div class="boxes">
+        <div class="phone-icon ic"><i class="fa-solid fa-calendar-days"></i></div>
+        <div class="box-text"><p>Affiliation : RJU University</p></div>
+      </div>
+
+      <div class="boxes">
+        <div class="phone-icon ic"><i class="fa-solid fa-calendar-days"></i></div>
+        <div class="box-text"><p>Tution Fee : NRs. 3,85,000</p></div>
+      </div>
+
+
+      <div class="boxes">
+        <div class="phone-icon ic"><i class="fa-solid fa-calendar-days"></i></div>
+        <div class="box-text"><p>Total seat : 40</p></div>
+      </div>
+      <div class="boxes">
+        <div class="phone-icon ic"><i class="fa-solid fa-calendar-days"></i></div>
+        <div class="box-text"><p>Cource Start : June every year</p></div>
+      </div>
+      <div class="download">
+        <a class="downlaod-catalog"href="#">DOWNLOAD PROGRAM CATALOG</a>
+      </div>
+      
+      <div class="depart"><p><o>contact admission department</o></p></div>
+      <div class="contact-info">
+        <div class="location info-icon">
+          <div class="location-icon "><i class="fa-solid fa-location-dot "></i></div>
+          <div class="location-no">Mahendra Chock, Biratnagar,Nepal</div>
+        </div>
+        <div class="phone info-icon">
+          <div class="phone-icon "><i class="fa-solid fa-phone  "></i></div>
+          <div class="phone-no">(+977) 9852039039</div>
+        </div>
+
+        <div class="phone info-icon">
+          <div class="phone-icon "><i class="fa-solid fa-phone  "></i></div>
+          <div class="phone-no">(+977) 9709027405</div>
+        </div>
+
+        <div class="phone info-icon">
+          <div class="phone-icon "><i class="fa-solid fa-phone  "></i></div>
+          <div class="phone-no">(+977) 9709027403</div>
+        </div>
+
+
+        <div class="mail info-icon">
+          <div class="mail-icon "><i class="fa-regular fa-envelope "></i></div>
+          <div class="mail-no">vgcollege.brt@gmail.com</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+</div>
+
+
+      
+    <!--about cources starts here-->
+    <!-- About courses starts here -->
+<div class="summery" >
+  <div class="summery-content">
+      <div class="summery-header"><bl><o>COURSE</o> SUMMARY</bl></div>
+      
+      <div class="read-more">
+          <div class="detail">COURSE DETAIL</div>
+          <div class="content-portion-text">
+              <div class="description" style="font-size: 18px; color: blue;">
+                  This course covers software engineering, networking, data technology, AI, and more.
+              </div>
+              <div class="full-description hidden" id="courseDetail">
+                  <p style="font-size: 18px; text-align: justify;">
+                      The curriculum includes hands-on experience in software development and exposure to real-world projects.
+                  </p>
+              </div>
+          </div>
+          <div class="about-readmore">
+              <button class="read-more-btn" onclick="toggleContent('courseDetail')">READ MORE</button>
+          </div>
+      </div>
+
+      <div class="read-more">
+          <div class="detail">CAREER OUTCOMES</div>
+          <div class="content-portion-text">
+              <div class="description" style="font-size: 18px; color: blue;">
+                  Graduates can pursue careers in software development, data analysis, IT management, and more.
+              </div>
+              <div id="careerOutcomes" class="full-description hidden">
+                  <p style="font-size: 18px; text-align: justify;">
+                      The program prepares students for various roles in the tech industry, providing them with the skills needed for success.
+                  </p>
+              </div>
+          </div>
+          <div class="about-readmore">
+              <button class="read-more-btn" onclick="toggleContent('careerOutcomes')">READ MORE</button>
+          </div>
+      </div>
+  </div>
+
+
+    
+
+
+
+      <div class="teacher-content">
+        <div class="intro"><bl>Meet the Head of <o>Computer Science </o>and <o>IT</o> Department</bl></div>
+        <div class="profile">
+          <div class="profile-picture"><img src="image/cource-image.jpg" alt="img"></div>
+          <div class="profile-content">
+            <div class="teacher-name"><bl>AK Das</bl></div>
+            <div class="post"><o>HOD IT, VG College</o></div>
+          </div>
+        </div>
+        <div class="phone info-icon">
+          <div class="phone-icon "><i class="fa-solid fa-phone  "></i></div>
+          <div class="phone-no">(+977) 476346347</div>
+        </div>
+        <div class="mail info-icon">
+          <div class="mail-icon "><i class="fa-regular fa-envelope "></i></div>
+          <div class="mail-no">abc123@gmail.com</div>
+        </div>
+        <div class="message-icon">
+          <div class="messanger"><a href="#"><i class="fa-brands fa-facebook-messenger"></i></a></div>
+          <div class="whats-app"><a href="#"><i class="fa-brands fa-square-whatsapp"></i></a></div>
+        </div>
+      </div>
+    </div>
+  
+
+
+
+    <div class="about-subscribe">
+      <div class="subscribe-content">
+        <div class="subscribe-video">
+          <video autoplay  controls muted class="subscribe-clips">
+            <source src="videos/video2.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="subscribe-form">
+        <div class="subscribe-text">
+          <div class="par sub"><p><bl>Subscribe To</bl><o>VG <bl>College</bl></o></p></div>
+          <div class="par nf">Don't Miss Out Any Notification</div>
+          <div class="get-email par">
+            <input type="text" name="" placeholder="Enter your Email">
+            <div class="subscribe-icon">
+              <a class="subscribe-click" href="#">SUBSCRIBE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+
+    
+      <div class="about-info">
+        <div class="contact-info">
+          <div class="touch"><p><bl>GET <o>IN </o> TOUCH</bl></p></div>
+          <div class="location info-icon">
+            <div class="location-icon ic"><i class="fa-solid fa-location-dot "></i></div>
+            <div class="location-no">Biratnagar-3,Nepal</div>
+          </div>
+          <div class="phone info-icon">
+            <div class="phone-icon ic"><i class="fa-solid fa-phone  "></i></div>
+            <div class="phone-no">(+977) 476346347</div>
+          </div>
+          <div class="mail info-icon">
+            <div class="mail-icon ic"><i class="fa-regular fa-envelope "></i></div>
+            <div class="mail-no">abc123@gmail.com</div>
+          </div>
+          <div class="follow-us">
+              <div class="fb"><a href="#"><i class="fa-brands fa-square-facebook"></i></a></div>
+              <div class="insta"><a href="#"><i class="fa-brands fa-square-instagram"></i></a></i></div>
+              <div class="x"><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></i></div>
+          </div>
+        </div>
+        <div class="link-info">
+          <div class="link-info-header"><BL>QUICK </BL><o>LINKS</o></div>
+          <div class="link-info-content">
+            <a href="index.html" class="icon-link">home</a>
+            <a href="course.html" class="icon-link">cource</a>
+            <a href="aboutus.html" class="icon-link">About us</a>
+            <a href="contactus.html" class="icon-link">Contact us</a>
+            <a href="noticevg.html" class="icon-link">Notice</a>
+        </div>
+        </div>
+        <div class="login-info">
+          <div class="login-header"><p><bl>ADMIN </bl><o>LOGIN</o></p></div>
+          <div class="admin-box">
+            <input type="text" name="" placeholder="Email">
+            <input type="password" name="" placeholder="Password">
+            <div class="login"><a href="#" class="login-text">LOGIN</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+    <div class="footer-content">
+        <div class="map">
+            <div class="map-content">
+                <img src="image/map-content.png" alt="map">
+            </div>
+        </div>
+        <div class="image-footer">
+            <div class="image-content-footer">
+                <img src="image/collegelogo.png" alt="college logo">
+            </div>
+        </div>
+
+        <div class="image-footer">
+          <div class="image-content-footer">
+              <img src="image/collegelogo.png" alt="college logo">
+          </div>
+      </div>
+
+      <div class="image-footer">
+        <div class="image-content-footer">
+            <img src="image/collegelogo.png" alt="college logo">
+        </div>
+    </div>
+
+    <div class="image-footer">
+      <div class="image-content-footer">
+          <img src="image/collegelogo.png" alt="college logo">
+      </div>
+  </div>
+
+  <div class="image-footer">
+    <div class="image-content-footer">
+        <img src="image/collegelogo.png" alt="college logo">
+    </div>
+</div>
+
+    </div>
+    <div class="footer-text">
+        <div class="image-text">
+            &copy; VG COLLEGE, ALL RIGHTS RESERVED. DESIGNED BY BRANDWAVE
+        </div>
+    </div>
+</div>
+
+
+  </body>
+    
+
+  <script>
+    let currentSection = 0;
+const formSections = document.querySelectorAll('.admission-form-section');
+
+function nextSection() {
+formSections[currentSection].classList.remove('active');
+currentSection++;
+if (currentSection < formSections.length) {
+    formSections[currentSection].classList.add('active');
+}
+}
+
+function prevSection() {
+formSections[currentSection].classList.remove('active');
+currentSection--;
+if (currentSection >= 0) {
+    formSections[currentSection].classList.add('active');
+}
+}
+
+document.getElementById('admissionForm').onsubmit = function(event) {
+alert('Form submitted successfully!');
+event.preventDefault();
+};
+
+</script>
+
+
+
+  <script src="script.js"></script>
+  <script src="aboutus.js"></script>
+  <script src="notice.js"></script>
+</html>

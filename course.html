@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="aboutus.css" />
+    <link rel="stylesheet" href="notice.css" />
+    <link rel="stylesheet" href="admissionform.css" />
+  </head>
+  <body>
+
+
+  
+    <div id="loading-screen" class="loading-screen">
+      <div class="loader">
+        <img src= "image/collegelogo.png" />
+    </div>
+  </div>
+
+    <span class="up-arrow">
+      <a  class="up" href="#"><i class="fa-solid fa-up-long"></i></a>
+    </span>
+
+    <div class="home">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#">
+            <img src="image/collegelogo.png" alt="clglogo" />
+          </a>
+        </div>
+        <div class="icon-content">
+          <div class="icons">
+            <a href="index.html" class="icon">Home</a>
+            <a href="cource.html" class="icon activeicon">Cource</a>
+            <a href="aboutus.html" class="icon">About us</a>
+            <a href="noticevg.html" class="icon ">Notice</a>
+            <a href="contactus.html" class="icon">Contact us</a>
+            
+              <a href="#" class="pp">
+                <i class="fa-solid fa-user icon" style="font-weight: bold;"></i>
+              </a>
+          </div>    
+          <div class="menu" onclick="showsidebar()">
+            <a href="#" class="menu-icon">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+
+      <ul class="sidebar">
+        <!-- Profile Icon on the left, Close button on the right -->
+        <li class="top-icons">
+            <!-- Profile Icon (left) -->
+            <a href="#" class="profile-icon">
+                <i class="fa-solid fa-user icon1"></i>
+            </a>
+    
+            <!-- Close Button (right) -->
+            <a class="closesidebar" onclick="closesidebar()" href="#">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </a>
+        </li>
+    
+        <!-- Navigation Links -->
+        <li><a href="index.html" class="icon1 ">Home</a></li>
+        <li><a href="course.html" class="icon1 activeicon">Course</a></li>
+        <li><a href="aboutus.html" class="icon1">About Us</a></li>
+        <li><a href="noticevg.html" class="icon1 ">Notice</a></li>
+        <li><a href="contactus.html" class="icon1">Contact Us</a></li>
+        
+   
+   
+     <!-- Footer section with contact icons and copyright at the bottom -->
+<div class="sidebar-footer">
+  <!-- Contact Icons container -->
+  <div class="contact-icons">
+      <a href="tel:+1234567890" class="contact-icon">
+          <i class="fa-solid fa-phone"></i>
+      </a>
+      <a href="https://wa.me/1234567890" class="contact-icon" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="mailto:info@vgcollege.com" class="contact-icon">
+          <i class="fa-solid fa-envelope"></i>
+      </a>
+  </div>
+
+  <!-- Copyright text -->
+  <p class="copyright-text">
+      All rights reserved by VG College <br>
+      <span class="designed-by">Designed by </span><span class="brandwave">Brandwave family</span>
+  </p>
+</div>
+
+
+    </ul>
+
+    
+
+
+      <!--menu icon for mobile  view-->
+      <div class="first">
+        <a href="#" class="firsticon">
+          <div class="lines">
+            <a href="#" class="logo" onclick="showsidebar()">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
+        </a>
+      </div>
+      </div>
+    </div>
+
+
+    <!-- Our courses starts here -->
+<div class="main-cources" style="margin-top: -50px;">
+    <div class="ourcource">
+        <p class="exp"><bl>Our </bl><o>Courses</o></p>
+    </div>
+    <div class="courcecontent">
+        <p style="text-align: center;">
+          Explore the diverse courses offered at VG College and find your path!
+        </p>
+    </div>
+    <div class="content">
+        <div class="box">
+             
+            <div class="courceicon"><i class="fa-solid fa-book"></i></div>
+            <div class="courcename">
+                Bachelor of Business <br />Administration(BBA)
+            </div>
+            <div class="time">
+                <ct>8 semester</ct> | <ct> 4 year</ct> | <ct>120 Credits</ct>
+            </div>
+            <div class="admission"><a href="coursebba.html">View Course Page</a></div>
+        </div>
+        <div class="box">
+           
+            <div class="courceicon"><i class="fa-solid fa-book"></i></div>
+            <div class="courcename">
+                BSc. Computer System and <br />Information Technology(BSc.IT)
+            </div>
+            <div class="time">
+                <ct>8 semester</ct> | <ct> 4 year</ct> | <ct>120 Credits</ct>
+            </div>
+            <div class="admission"><a href="courceit.html">View Course Page</a></div>
+        </div>
+    </div>
+  </div>
+
+    
+
+
+    <div class="about-subscribe">
+      <div class="subscribe-content">
+        <div class="subscribe-video">
+          <video autoplay  controls muted class="subscribe-clips">
+            <source src="videos/video2.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="subscribe-form">
+        <div class="subscribe-text">
+          <div class="par sub"><p><bl>Subscribe To</bl><o>VG <bl>College</bl></o></p></div>
+          <div class="par nf">Don't Miss Out Any Notification</div>
+          <div class="get-email par">
+            <input type="text" name="" placeholder="Enter your Email">
+            <div class="subscribe-icon">
+              <a class="subscribe-click" href="#">SUBSCRIBE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+
+    
+      <div class="about-info">
+        <div class="contact-info">
+          <div class="touch"><p><bl>GET <o>IN </o> TOUCH</bl></p></div>
+          <div class="location info-icon">
+            <div class="location-icon ic"><i class="fa-solid fa-location-dot "></i></div>
+            <div class="location-no">Biratnagar-3,Nepal</div>
+          </div>
+          <div class="phone info-icon">
+            <div class="phone-icon ic"><i class="fa-solid fa-phone  "></i></div>
+            <div class="phone-no">(+977) 476346347</div>
+          </div>
+          <div class="mail info-icon">
+            <div class="mail-icon ic"><i class="fa-regular fa-envelope "></i></div>
+            <div class="mail-no">abc123@gmail.com</div>
+          </div>
+          <div class="follow-us">
+              <div class="fb"><a href="#"><i class="fa-brands fa-square-facebook"></i></a></div>
+              <div class="insta"><a href="#"><i class="fa-brands fa-square-instagram"></i></a></i></div>
+              <div class="x"><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></i></div>
+          </div>
+        </div>
+        <div class="link-info">
+          <div class="link-info-header"><BL>QUICK </BL><o>LINKS</o></div>
+          <div class="link-info-content">
+            <a href="index.html" class="icon-link">home</a>
+            <a href="course.html" class="icon-link">cource</a>
+            <a href="aboutus.html" class="icon-link">About us</a>
+            <a href="contactus.html" class="icon-link">Contact us</a>
+            <a href="noticevg.html" class="icon-link">Notice</a>
+        </div>
+        </div>
+        <div class="login-info">
+          <div class="login-header"><p><bl>ADMIN </bl><o>LOGIN</o></p></div>
+          <div class="admin-box">
+            <input type="text" name="" placeholder="Email">
+            <input type="password" name="" placeholder="Password">
+            <div class="login"><a href="#" class="login-text">LOGIN</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+    <div class="footer-content">
+        <div class="map">
+            <div class="map-content">
+                <img src="image/map-content.png" alt="map">
+            </div>
+        </div>
+        <div class="image-footer">
+            <div class="image-content-footer">
+                <img src="image/collegelogo.png" alt="college logo">
+            </div>
+        </div>
+
+        <div class="image-footer">
+          <div class="image-content-footer">
+              <img src="image/collegelogo.png" alt="college logo">
+          </div>
+      </div>
+
+      <div class="image-footer">
+        <div class="image-content-footer">
+            <img src="image/collegelogo.png" alt="college logo">
+        </div>
+    </div>
+
+    <div class="image-footer">
+      <div class="image-content-footer">
+          <img src="image/collegelogo.png" alt="college logo">
+      </div>
+  </div>
+
+  <div class="image-footer">
+    <div class="image-content-footer">
+        <img src="image/collegelogo.png" alt="college logo">
+    </div>
+</div>
+
+    </div>
+    <div class="footer-text">
+        <div class="image-text">
+            &copy; VG COLLEGE, ALL RIGHTS RESERVED. DESIGNED BY BRANDWAVE
+        </div>
+    </div>
+</div>
+
+
+  </body>
+    
+
+  <script>
+    let currentSection = 0;
+const formSections = document.querySelectorAll('.admission-form-section');
+
+function nextSection() {
+formSections[currentSection].classList.remove('active');
+currentSection++;
+if (currentSection < formSections.length) {
+    formSections[currentSection].classList.add('active');
+}
+}
+
+function prevSection() {
+formSections[currentSection].classList.remove('active');
+currentSection--;
+if (currentSection >= 0) {
+    formSections[currentSection].classList.add('active');
+}
+}
+
+document.getElementById('admissionForm').onsubmit = function(event) {
+alert('Form submitted successfully!');
+event.preventDefault();
+};
+
+</script>
+
+
+
+  <script src="script.js"></script>
+  <script src="aboutus.js"></script>
+  <script src="notice.js"></script>
+</html>

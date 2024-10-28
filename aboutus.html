@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="aboutus.css" />
+  </head>
+  <body>
+
+
+  
+    <div id="loading-screen" class="loading-screen">
+      <div class="loader">
+        <img src= "image/collegelogo.png" />
+    </div>
+  </div>
+
+    <span class="up-arrow">
+      <a  class="up" href="#"><i class="fa-solid fa-up-long"></i></a>
+    </span>
+
+    <div class="home">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#">
+            <img src="image/collegelogo.png" alt="clglogo" />
+          </a>
+        </div>
+        <div class="icon-content">
+          <div class="icons">
+            <a href="index.html" class="icon">home</a>
+            <a href="course.html" class="icon ">cource</a>
+            <a href="aboutus.html" class="icon activeicon">About us</a>
+            <a href="noticevg.html" class="icon">Notice</a>
+            <a href="contactus.html" class="icon">Contact us</a>
+            
+              <a href="#" class="pp">
+                <i class="fa-solid fa-user icon" style="font-weight: bold;"></i>
+              </a>
+          </div>    
+          <div class="menu" onclick="showsidebar()">
+            <a href="#" class="menu-icon">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+
+      <ul class="sidebar">
+        <!-- Profile Icon on the left, Close button on the right -->
+        <li class="top-icons">
+            <!-- Profile Icon (left) -->
+            <a href="#" class="profile-icon">
+                <i class="fa-solid fa-user icon1"></i>
+            </a>
+    
+            <!-- Close Button (right) -->
+            <a class="closesidebar" onclick="closesidebar()" href="#">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </a>
+        </li>
+    
+        <!-- Navigation Links -->
+        <li><a href="index.html" class="icon1">Home</a></li>
+        <li><a href="course.html" class="icon1 ">Course</a></li>
+        <li><a href="aboutus.html" class="icon1 activeicon">About Us</a></li>
+        <li><a href="noticevg.html" class="icon1">Notice</a></li>
+        <li><a href="contactus.html" class="icon1">Contact Us</a></li>
+        
+   
+   
+     <!-- Footer section with contact icons and copyright at the bottom -->
+<div class="sidebar-footer">
+  <!-- Contact Icons container -->
+  <div class="contact-icons">
+      <a href="tel:+1234567890" class="contact-icon">
+          <i class="fa-solid fa-phone"></i>
+      </a>
+      <a href="https://wa.me/1234567890" class="contact-icon" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="mailto:info@vgcollege.com" class="contact-icon">
+          <i class="fa-solid fa-envelope"></i>
+      </a>
+  </div>
+
+  <!-- Copyright text -->
+  <p class="copyright-text">
+      All rights reserved by VG College <br>
+      <span class="designed-by">Designed by </span><span class="brandwave">Brandwave family</span>
+  </p>
+</div>
+
+
+    </ul>
+
+    
+
+
+      <!--menu icon for mobile  view-->
+      <div class="first">
+        <a href="#" class="firsticon">
+          <div class="lines">
+            <a href="#" class="logo" onclick="showsidebar()">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
+        </a>
+      </div>
+      </div>
+    </div>
+
+    
+    <div class="aboutmid" style="margin-top: -50px;">
+      <div class="college-content">
+     
+        <o class="big big-letter">
+          About VG College
+          
+        </o>
+        <p style="font-size: 17px; text-align: justify;">
+          VG College is dedicated to providing high-quality education and fostering a supportive learning environment. 
+          Our programs are designed to equip students with the skills and knowledge needed to excel in their chosen 
+          fields. From cutting-edge technology courses like BSc CSIT to comprehensive BBA training, we prioritize 
+          excellence in education and student success.
+           </p>
+      <p style="font-size: 17px; text-align: justify;">
+        Located in the heart of Biratnagar city, Mahendra Chowk, VG College offers a dynamic and engaging 
+        learning atmosphere. Our experienced faculty members are industry experts, bringing real-world insights 
+        into the classroom to enhance student learning. Additionally, we offer generous scholarships
+         for deserving candidates, ensuring that opportunities for higher education are accessible to all.   
+      </p>
+     
+      </div>
+      <div class="slider" style="margin-top: -50px;">
+        <div class="slider-container">
+          <div class="slides">
+            <div class="slide">
+              <img src="image/college4.jpg" alt="First Image" />
+            </div>
+            <div class="slide">
+              <img src="image/college5.jpg" alt="Second Image" />
+            </div>
+            <div class="slide">
+              <img src="image/college3.jpg" alt="Third Image" />
+            </div>
+          </div>
+        </div>
+          <!-- Dots below the slider -->
+          <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+      </div>
+    </div>
+    
+
+   <!-- Director portion starts here -->
+<div class="dir">
+  <div class="video-content">
+      <video controls autoplay muted src="videos/director.mp4" class="mp4"></video>
+  </div>
+
+  <div class="about-director">
+      <div class="director-info">
+          <div class="image-circle">
+              <img src="image/akdas.jpg" alt="Director's Image">
+          </div>
+          <div class="text-info">
+              <div class="director"><o>Message From the desk of Director</o></div>
+              <div class="director-name"><bl>Mr. KD Das</bl></div>
+          </div>
+      </div>
+      <p class="paragraph-director" style="font-size: 18px;">
+        Welcome to VG College! We started this institution with a vision to fill a significant gap in 
+         Nepal—a need for a college that not only teaches business and technology but does so in a way that
+          prepares students to be leaders in the ever-changing global landscape. Our founders, drawing from 
+          deep experience in both academia and the corporate world, wanted to build a place where students aren’t 
+          just educated but are truly prepared to make an impact.
+
+      </p>
+      <p class="paragraph-director">
+      </p>
+      <p class="paragraph-director" style="font-size: 18px;">
+        At VG College, our programs in IT and management go beyond theory, focusing on real-world skills that 
+        give students a competitive edge. We believe that true learning comes from a blend of innovation, practical
+         application, and critical thinking. Our mission is to nurture talent in an environment that values 
+         excellence, leadership, and integrity. As you embark on your journey here, know that you are not just
+          joining a college—you’re becoming part of a community committed to making a difference in Nepal and the
+           world. We’re excited to support you every step of the way as you build your future with us.
+      </p>
+  </div>
+</div>
+
+<div class="aboutdir">
+  <div class="about-director">
+      <div class="director-info" >
+          
+          <div class="text-info">
+              <div class="director"><o>Where VG College is Located?</o></div>
+              <div class="director-name"><bl>Mr. KD Das</bl></div>
+          </div>
+      </div>
+      <p class="paragraph-director" style="font-size: 18px;">
+        VG College is conveniently located in the heart of Biratnagar city, at Mahendra Chowk, in the Morang
+         district of eastern Nepal. This central location makes it easily accessible to students from various 
+         parts of the region, offering a vibrant urban setting that supports both academic pursuits and personal
+          growth.
+      </p>
+      
+  </div>
+
+  <div class="map-content" style="height: 300px;">
+      <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345090456!2d144.95373531531656!3d-37.81627997975136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11d993%3A0x5045675218ceed30!2sYour%20Location!5e0!3m2!1sen!2sau!4v1629301947250!5m2!1sen!2sau" 
+          width="400" 
+          height="800" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy"></iframe>
+  </div>
+</div>
+
+
+
+
+    
+   
+
+    <div class="chief">
+      <div class="chief-content">
+       
+        <div class="director-info">
+          <div class="image-circle">
+              <img src="image/chief.png" alt="Director's Image">
+          </div>
+          <div class="text-info">
+              <div class="director"><o>Message From the desk of Chief</o></div>
+              <div class="director-name"><bl>Ms. abc name</bl></div>
+          </div>
+      </div>
+
+
+        <div class="chief-description">
+          <p style="font-size: 18px; text-align: justify;">
+            Welcome to VG College, a leading institution in Biratnagar, committed to delivering quality 
+            education and fostering a culture of academic excellence. Our goal is to provide students with 
+            the best learning environment, where they can acquire the skills and knowledge needed to thrive 
+            in their chosen fields. At VG College, we offer a diverse range of programs, including BSc CSIT 
+            and BBA, designed to meet the evolving demands of today’s competitive job market. Our dedicated 
+            faculty, comprised of industry experts and experienced educators, 
+            ensures that students receive both theoretical knowledge and practical skills to succeed.
+          </p>
+
+          <p style="font-size: 18px; text-align: justify;">
+            Situated in the heart of Biratnagar city at Mahendra Chowk, VG College is ideally located 
+            for students from the Morang district and beyond. Our campus is equipped with modern facilities 
+            that support both academic and personal development. We are proud to offer scholarships for deserving 
+            students, making higher education accessible to those with a passion for learning. Join us at VG College
+             and take the first step toward a brighter future in higher education and career advancement.
+
+
+          </p>
+
+        </div>
+      </div>
+      <div class="chief-video">
+        <video autoplay loop muted controls class="chief-video-content">
+          <source src="videos/chief.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+    
+    <div class="about">
+      <div class="aboutus">
+        <div class="aboutus-header"><bl>About</bl> <o>Us</o></div>
+        <div class="aboutus-image">
+          <img src="image/collegelogo.png" alt="image" />
+        </div>
+      </div>
+      <div class="about-content">
+        <div class="about-content-text">
+          <div class="content-portion">
+            <div class="content-portion-header">VG VISION</div>
+            <div class="content-portion-text">
+              <div class="description" style="font-size: 18px; color: blue;">
+                Our vision at VG College is to be a premier 
+                 
+              </div>
+              <div class="full-description hidden" style="text-align: justify; font-size: 18px;">
+                Our vision at VG College is to be a premier educational institution  in Biratnagar, renowned for delivering high-quality education and fostering a supportive learning environment.
+                  We aim to shape future leaders by providing cutting-edge programs like BSc CSIT and BBA, 
+                  ensuring that our students are well-prepared for the global job market. Located in the heart 
+                  of Biratnagar city, at Mahendra Chowk, our goal is to become a hub of innovation and academic
+                   excellence in eastern Nepal.
+
+                   <p style="text-align: justify; font-size: 18px;">
+                    We are committed to offering modern teaching methods, state-of-the-art facilities, and 
+                    scholarships for deserving students to make higher education accessible to all. With a focus
+                     on personal growth, skill development, and career readiness, VG College strives to empower 
+                     students to achieve their educational goals and become professionals who can make a positive
+                      impact in their communities. At VG College, we are dedicated to creating a brighter future 
+                      through transformative learning experiences and industry-relevant education.
+                   </p>
+              </div>
+            </div>
+          </div>
+          <div class="about-readmore">
+            <button class="read-more-btn">READ MORE</button>
+          </div>
+        </div>
+        <!-- Repeat for other sections -->
+        <div class="about-content-text">
+          <div class="content-portion">
+            <div class="content-portion-header">VG MISSION</div>
+            <div class="content-portion-text">
+              <div class="description" style="font-size: 18px; color: blue;">
+                At VG College, our mission is to provide
+              </div>
+              <div class="full-description hidden">
+                <p style="font-size: 18px; text-align: justify;">
+                  At VG College, our mission is to provide quality education that prepares students
+                 for the challenges of the modern world. We are dedicated to offering a dynamic learning
+                  environment that encourages creativity, critical thinking, and innovation. By offering 
+                  a diverse range of programs, such as BSc CSIT and BBA, we ensure that our students gain
+                   the practical skills and theoretical knowledge needed to excel in their chosen career paths. 
+                   Our focus is on fostering academic excellence and personal growth, guiding students to become
+                    future leaders in their respective fields.
+                  </p>
+                    <p style="font-size: 18px; text-align: justify;">
+                      Located in the heart of Biratnagar city at Mahendra Chowk, 
+                      VG College aims to be a center of educational excellence in the Morang district 
+                      and across eastern Nepal. We strive to make higher education accessible through
+                       scholarship programs for deserving students, supporting those with a passion for learning. 
+                       Our mission is to create a supportive and inclusive community where every student has the 
+                       opportunity to realize their potential and achieve career success. At VG College, we are committed 
+                       to shaping a brighter future through student-centered education and industry-relevant training.
+                    </p>
+              </div>
+            </div>
+          </div>
+          <div class="about-readmore">
+            <button class="read-more-btn">READ MORE</button>
+          </div>
+        </div>
+        <!-- Add other sections similarly -->
+
+         <!-- Repeat for other sections -->
+         <div class="about-content-text">
+          <div class="content-portion">
+            <div class="content-portion-header">Why VG College?</div>
+            <div class="content-portion-text">
+              <div class="description" style="font-size: 18px; text-align: justify; color: blue;">
+                VG College stands out as a top choice for students in
+              </div>
+              <div class="full-description hidden">
+                <p style="font-size: 18px; text-align: justify;" >
+                  VG College stands out as a top choice for students in Biratnagar and eastern Nepal, 
+                offering a blend of quality education and practical training that sets students on 
+                the path to success. With a commitment to academic excellence and holistic development, 
+                VG College ensures that students gain real-time industry exposure through interactions with
+                 industry experts and highly experienced faculty. Our state-of-the-art facilities and modern
+                  learning environment create the perfect setting for academic growth and personal development.
+                   VG College’s supportive team and management prioritize the needs of students, fostering a 
+                   nurturing atmosphere for learning and collaboration.
+                  </p>
+
+                  <p style="color: orangered; font-size: 18px;">
+                   <b>Key Highlights of VG College:</b> 
+
+                   <ul style="text-align: justify;">
+                 <li>  <b>National and multinational companies visit</b>  our campus, offering students 
+                 excellent placement opportunities and insights into the global job market.</li>
+                 <li><b> Real-time industry exposure </b>  through sessions with industry experts 
+                  ensures that students are job-ready upon graduation.</li>
+                  <li> <b> Highly experienced teaching faculty</b> with extensive knowledge in 
+                  their respective fields guides students through every step of their academic journey.</li>
+                  <li> <b> Excursion tours and field visits</b> are part of our curriculum, 
+                  enriching students' understanding through practical learning experiences.</li>
+                  <li> <b> A supportive team and management</b> are always available to assist 
+                  students with their academic and personal needs.</li>
+                  <li> <b> State-of-the-art facilities </b> and a modern learning ambience provide a
+                   comfortable and engaging environment for students.</li>
+                  </ul>
+                  </p>
+
+              </div>
+            </div>
+          </div>
+          <div class="about-readmore">
+            <button class="read-more-btn">READ MORE</button>
+          </div>
+        </div>
+        <!-- Add other sections similarly -->
+
+
+         <!-- Repeat for other sections -->
+         <div class="about-content-text">
+          <div class="content-portion">
+            <div class="content-portion-header">VG MOU</div>
+            <div class="content-portion-text">
+              <div class="description" style="font-size: 18px; color: blue;">
+                MoUs for IT and Management at VG College
+              </div>
+              <div class="full-description hidden">
+                <P style="font-size: 18px; text-align: justify;">
+                  At VG College, we are committed to providing our students with opportunities 
+                  for hands-on learning and real-world industry exposure through strategic partnerships 
+                  with leading organizations. Our MoUs with top companies in IT and Management sectors
+                   ensure that our students receive cutting-edge training, internship opportunities, and 
+                   practical experience that align with industry standards.
+                </P>
+
+                <p>
+                 <b style="color: blue;"> For our IT programs, VG College has established MoUs with several reputed organizations:</b>
+<ul style="text-align: justify;">
+
+
+<li><b>NDF (NUMA Digital Farm):</b> This partnership focuses on digital innovation and 
+technology training, providing students with access to workshops, internships, and real-time
+ projects in digital farming and technology integration.</li>
+<li><b>AIT (Academy for Innovation in Technology):</b> Through this MoU, students can benefit from specialized 
+training sessions, certification courses, and mentorship programs aimed at fostering innovation and entrepreneurship
+ in the field of information technology.</li>
+<li><b>IT Training Nepal:</b> This collaboration ensures that students receive industry-oriented IT training and
+ upskilling programs, equipping them with the latest skills required in the IT job market.</li>
+<li><b>Prabidhi: </b>VG College's partnership with Prabidhi offers students exposure to technology-driven projects 
+and real-time problem-solving, preparing them for a successful career in software development, web technologies, 
+and IT services.</li>
+               
+</ul>
+</p>
+
+                <p>
+                 <b style="font-size: 18px; color: blue;"> For our Management programs, VG College has also formed valuable partnerships with notable organizations:</b>
+
+                 <ul style="text-align: justify;">
+<li><b>Makalu Television HD and Max TV:</b> These MoUs allow management students to gain hands-on experience
+ in the media industry through internships, studio visits, and opportunities to work on live broadcasting projects.</li>
+<li><b>Belbari Housing: </b>This collaboration offers students insights into the real estate industry, providing 
+  practical training in property management, housing projects, and client relations.</li>
+<li><b>Paras Multispeciality Hospital Pvt. Ltd.:</b> With this MoU, management students can explore healthcare management,
+   hospital administration, and customer service roles through internships and workshops, enhancing their
+    understanding of the healthcare sector.</li>
+</ul>
+
+<b>These strategic partnerships with leading IT and management organizations not only enrich the educational 
+  experience at VG College but also prepare our students to thrive in the competitive job market.</b>
+
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="about-readmore">
+            <button class="read-more-btn">READ MORE</button>
+          </div>
+        </div>
+        <!-- Add other sections similarly -->
+
+
+         <!-- Repeat for other sections -->
+         <div class="about-content-text">
+          <div class="content-portion">
+            <div class="content-portion-header">Contact Us</div>
+            <div class="content-portion-text">
+              <div class="description" style="color: blue; font-size: 18px;">
+                Get in touch with VG College
+              </div>
+              <div class="full-description hidden">
+                <p>
+                  For any inquiries, please reach out to us using the following contact details:
+                </p>
+                <ul style="font-size: 18px;">
+                  <li><strong>Phone Numbers:</strong></li>
+                  <li>+977-9852039039</li>
+                  <li>+977-9709027405</li>
+                  <li>+977-9709027403</li>
+                  <li><strong>Email:</strong> vgcollege.brt@gmail.com</li>
+                  <li><strong>Address:</strong> VG College, Mahendra Chowk, Biratnagar, Morang, Nepal</li>
+                </ul>
+                <p style="margin-top: 10px;">
+                  <strong>Connect with us:</strong>
+                </p>
+                <div style="display: flex; gap: 10px;">
+                  <a href="mailto:info@vgcollege.edu.np" title="Email Us" target="_blank">
+                    <img src="path-to-gmail-icon.png" alt="Gmail Icon" style="width: 24px; height: 24px;">
+                  </a>
+                  <a href="https://wa.me/9779800001111" title="Chat on WhatsApp" target="_blank">
+                    <img src="path-to-whatsapp-icon.png" alt="WhatsApp Icon" style="width: 24px; height: 24px;">
+                  </a>
+                </div>
+
+                <div style="margin-top: 20px;">
+                  <h3>Find Us Here:</h3>
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.960673310922!2d87.27109631514722!3d26.457516483120693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1b14cf7cbb49%3A0x81a246b7d3454c0!2sVG%20College!5e0!3m2!1sen!2snp!4v1632473720901!5m2!1sen!2snp" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                  </iframe>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="about-readmore">
+            <button class="read-more-btn">READ MORE</button>
+          </div>
+        </div>
+        <!-- Add other sections similarly -->
+
+
+      </div>
+    </div>
+    
+    
+    <div class="about-subscribe">
+      <div class="subscribe-content">
+        <div class="subscribe-video">
+          <video autoplay  controls muted class="subscribe-clips">
+            <source src="videos/video2.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="subscribe-form">
+        <div class="subscribe-text">
+          <div class="par sub"><p><bl>Subscribe To</bl><o>VG <bl>College</bl></o></p></div>
+          <div class="par nf">Don't Miss Out Any Notification</div>
+          <div class="get-email par">
+            <input type="text" name="" placeholder="Enter your Email">
+            <div class="subscribe-icon">
+              <a class="subscribe-click" href="#">SUBSCRIBE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+
+    
+      <div class="about-info">
+        <div class="contact-info">
+          <div class="touch"><p><bl>GET <o>IN </o> TOUCH</bl></p></div>
+          <div class="location info-icon">
+            <div class="location-icon ic"><i class="fa-solid fa-location-dot "></i></div>
+            <div class="location-no">Biratnagar-3,Nepal</div>
+          </div>
+          <div class="phone info-icon">
+            <div class="phone-icon ic"><i class="fa-solid fa-phone  "></i></div>
+            <div class="phone-no">(+977) 476346347</div>
+          </div>
+          <div class="mail info-icon">
+            <div class="mail-icon ic"><i class="fa-regular fa-envelope "></i></div>
+            <div class="mail-no">abc123@gmail.com</div>
+          </div>
+          <div class="follow-us">
+              <div class="fb"><a href="#"><i class="fa-brands fa-square-facebook"></i></a></div>
+              <div class="insta"><a href="#"><i class="fa-brands fa-square-instagram"></i></a></i></div>
+              <div class="x"><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></i></div>
+          </div>
+        </div>
+        <div class="link-info">
+          <div class="link-info-header"><BL>QUICK </BL><o>LINKS</o></div>
+          <div class="link-info-content">
+            <a href="index.html" class="icon-link">home</a>
+            <a href="course.html" class="icon-link">cource</a>
+            <a href="aboutus.html" class="icon-link">About us</a>
+            <a href="course.html" class="icon-link">Contact us</a>
+            <a href="noticevg.html" class="icon-link">Notice</a>
+        </div>
+        </div>
+        <div class="login-info">
+          <div class="login-header"><p><bl>ADMIN </bl><o>LOGIN</o></p></div>
+          <div class="admin-box">
+            <input type="text" name="" placeholder="Email">
+            <input type="password" name="" placeholder="Password">
+            <div class="login"><a href="#" class="login-text">LOGIN</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+    <div class="footer-content">
+        <div class="map">
+            <div class="map-content">
+                <img src="image/map-content.png" alt="map">
+            </div>
+        </div>
+        <div class="image-footer">
+            <div class="image-content-footer">
+                <img src="image/collegelogo.png" alt="college logo">
+            </div>
+        </div>
+
+        <div class="image-footer">
+          <div class="image-content-footer">
+              <img src="image/collegelogo.png" alt="college logo">
+          </div>
+      </div>
+
+      <div class="image-footer">
+        <div class="image-content-footer">
+            <img src="image/collegelogo.png" alt="college logo">
+        </div>
+    </div>
+
+    <div class="image-footer">
+      <div class="image-content-footer">
+          <img src="image/collegelogo.png" alt="college logo">
+      </div>
+  </div>
+
+  <div class="image-footer">
+    <div class="image-content-footer">
+        <img src="image/collegelogo.png" alt="college logo">
+    </div>
+</div>
+
+    </div>
+    <div class="footer-text">
+        <div class="image-text">
+            &copy; VG COLLEGE, ALL RIGHTS RESERVED. DESIGNED BY BRANDWAVE
+        </div>
+    </div>
+</div>
+
+
+  </body>
+    
+
+
+  <script src="script.js"></script>
+  <script src="aboutus.js"></script>
+</html>

@@ -1,0 +1,171 @@
+/* Styles for the fixed background container */
+/* Keyframe animation for growing effect */
+@keyframes growFromLeft {
+    0% {
+        transform: scaleX(0); /* Start from 0 width */
+        opacity: 0; /* Start hidden */
+    }
+    100% {
+        transform: scaleX(1); /* End at full width */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+/* Styles for the fixed background container */
+.admission-container {
+    width: 100%; /* Full width of the screen */
+    height: 120vh; /* Full height of the viewport */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: rgb(253, 195, 173); /* Background color */
+    margin-top: -70px; /* Negative margin for positioning */
+    animation: growFromLeft 0.5s ease-out forwards; /* Apply the animation */
+    transform-origin: left; /* Set the transform origin to the left */
+}
+
+/* Styles for each form section */
+.admission-form-section {
+    display: none; /* Hide all sections initially */
+}
+
+.admission-form-section.active {
+    display: block; /* Show the active section */
+    background: transparent; /* Transparent background for the form sections */
+    padding: 50px;
+    
+}
+
+
+/* Styles for headings */
+.admission-form-section h2 {
+    text-align: center; /* Centered headings */
+    color: #333; /* Darker color for contrast */
+}
+
+/* Styles for paragraphs */
+.admission-form-section p {
+    text-align: center; /* Centered paragraphs */
+    color: #666; /* Lighter color for less emphasis */
+}
+
+/* Styles for form rows */
+.admission-form-row {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    margin-bottom: 5px; /* Spacing between rows */
+}
+
+/* Styles for form groups */
+.admission-form-group {
+    flex: 1; /* Allow equal growth for each group */
+    margin: 0 10px; /* Horizontal spacing between groups */
+    min-width: 150px; /* Minimum width for each group */
+}
+
+/* Input fields and select boxes */
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="email"],
+select,
+input[type="file"] {
+    width: 100%; /* Full width of the container */
+    padding: 10px; /* Padding for better touch area */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded corners for inputs */
+    box-sizing: border-box; /* Include padding and border in total width */
+}
+
+/* Styles for buttons */
+.admission-form-navigation button {
+    background-color: orangered; /* Button background color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 10px; /* Margin for spacing */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.admission-form-navigation {
+    text-align: center; /* Center navigation buttons */
+}
+
+/* Button hover effect */
+.admission-form-navigation button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .admission-form-row {
+        flex-direction: column; /* Stack elements on small screens */
+        align-items: flex-start; /* Align items to the left */
+    }
+    
+    .admission-form-group {
+        width: 100%; /* Use full width for each form group */
+        margin: 10px 0; /* Vertical spacing for stacked items */
+    }
+
+    /* Centering the buttons on smaller screens */
+    .admission-form-navigation {
+        display: flex; /* Use flexbox for alignment */
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons horizontally */
+    }
+
+    .admission-form-navigation button {
+        width: 100%; /* Full width for buttons */
+        margin: 5px 0; /* Spacing between buttons */
+    }
+}
+
+
+
+/* Keyframe animation for sliding out */
+@keyframes slideOut {
+    0% {
+        transform: translateX(0); /* Start at the original position */
+        opacity: 1; /* Fully visible */
+    }
+    100% {
+        transform: translateX(-100%); /* Slide out to the left */
+        opacity: 0; /* Fade out */
+    }
+}
+
+/* Keyframe animation for sliding in */
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%); /* Start from the right */
+        opacity: 0; /* Start hidden */
+    }
+    100% {
+        transform: translateX(0); /* End at original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+/* Styles for each form section */
+.admission-form-section {
+    display: none; /* Hide all sections initially */
+  
+    transition: opacity 0.5s ease; /* Smooth opacity transition */
+}
+
+.admission-form-section.active {
+    display: block; /* Show the active section */
+    opacity: 1; /* Ensure it's visible */
+}
+
+/* Add sliding animation to the active section */
+.admission-form-section.sliding-in {
+    animation: slideIn 0.5s forwards; /* Apply sliding in animation */
+}
+
+.admission-form-section.sliding-out {
+    animation: slideOut 0.5s forwards; /* Apply sliding out animation */
+}

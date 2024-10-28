@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div id="loading-screen" class="loading-screen">
+      <div class="loader">
+        <img src= "image/collegelogo.png" />
+    </div>
+  </div>
+  
+
+    <span class="up-arrow">
+      <a  class="up" href="#"><i class="fa-solid fa-up-long"></i></a>
+    </span>
+
+
+    <div class="home">
+
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#">
+            <img src="image/collegelogo.png" alt="clglogo" />
+          </a>
+        </div>
+        <div class="icon-content">
+          <div class="icons">
+            <a href="index.html" class="icon activeicon">Home</a>
+            <a href="course.html" class="icon">Coures</a>
+            <a href="aboutus.html" class="icon">About us</a>
+            <a href="contactus.html" class="icon">Contact us</a>
+            <a href="noticevg.html" class="icon">Notice</a>
+              <a href="#" class="pp">
+                <i class="fa-solid fa-user icon" style="font-weight: bold;"></i>
+              </a>
+          </div>    
+          <div class="menu" onclick="showsidebar()">
+            <a href="#" class="menu-icon">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="mid" style="margin-top: -30px;">
+        <div class="college-content">
+         <p id="typing-text"></p>
+          <o class="big">
+            Scholarship<br />
+            Upto<bl><hun class="huns">100%</hun></bl>
+          </o>
+          <p class="text">
+           Shaping Future Leaders in<br />
+             Business & Technology
+          </p>
+
+          <div class="applynow">
+            <a href="javascript:void(0)" class="apply" onclick="openForm()">APPLY NOW</a>
+          </div>
+
+        <div class="popup-form" id="popupForm">
+          <div class="form-content">
+              <h2>Apply Now for Scholarship</h2>
+              <label for="full-name">Full Name:</label>
+              <input type="text" id="full-name" required>
+      
+              <label for="email">Email Address:</label>
+              <input type="email" id="email" required>
+      
+              <label for="mobile">Mobile Number:</label>
+              <input type="tel" id="mobile" required>
+      
+              <label for="qualification">Latest Qualification:</label>
+              <input type="text" id="qualification" required>
+      
+              <!-- Button Container -->
+              <div class="button-container">
+                  
+                  <button class="close-btn" onclick="closeForm()">Close</button>
+                  <button class="submit-btn">Apply</button>
+              </div>
+          </div>
+      </div>
+    </div>
+
+
+
+        <div class="slider">
+          <div class="slider-container">
+            <div class="slides">
+              <div class="slide">
+                <img src="image/college4.jpg" alt="First Image" />
+              </div>
+              <div class="slide">
+                <img src="image/college5.jpg" alt="Second Image" />
+              </div>
+              <div class="slide">
+                <img src="image/college3.jpg" alt="Third Image" />
+              </div>
+            </div>
+          </div>
+            <!-- Dots below the slider -->
+            <div class="dots">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+      </div>
+      
+
+
+      <ul class="sidebar">
+        <!-- Profile Icon on the left, Close button on the right -->
+        <li class="top-icons">
+            <!-- Profile Icon (left) -->
+            <a href="#" class="profile-icon">
+                <i class="fa-solid fa-user icon1"></i>
+            </a>
+    
+            <!-- Close Button (right) -->
+            <a class="closesidebar" onclick="closesidebar()" href="#">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </a>
+        </li>
+    
+        <!-- Navigation Links -->
+        <li><a href="index.html" class="icon1 activeicon">Home</a></li>
+        <li><a href="cource.html" class="icon1">Course</a></li>
+        <li><a href="aboutus.html" class="icon1">About Us</a></li>
+        <li><a href="contactus.html" class="icon1">Contact Us</a></li>
+        <li><a href="noticevg.html" class="icon1">Notice</a></li>
+   
+   
+     <!-- Footer section with contact icons and copyright at the bottom -->
+<div class="sidebar-footer">
+  <!-- Contact Icons container -->
+  <div class="contact-icons">
+      <a href="tel:+1234567890" class="contact-icon">
+          <i class="fa-solid fa-phone"></i>
+      </a>
+      <a href="https://wa.me/1234567890" class="contact-icon" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="mailto:info@vgcollege.com" class="contact-icon">
+          <i class="fa-solid fa-envelope"></i>
+      </a>
+  </div>
+
+  <!-- Copyright text -->
+  <p class="copyright-text">
+      All rights reserved by VG College <br>
+      <span class="designed-by">Designed by </span><span class="brandwave">Brandwave family</span>
+  </p>
+</div>
+
+
+    </ul>
+
+    
+
+
+      <!--menu icon for mobile  view-->
+      <div class="first">
+        <a href="#" class="firsticon">
+          <div class="lines">
+            <a href="#" class="logo" onclick="showsidebar()">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
+        </a>
+      </div>
+      </div>
+    </div>
+    
+    
+    <!-- Our courses starts here -->
+<div class="cources">
+  <div class="ourcource">
+      <p class="exp"><bl>Our </bl><o>Courses</o></p>
+  </div>
+  <div class="courcecontent">
+      <p style="text-align: center;">
+        Explore the diverse courses offered at VG College and find your path!
+      </p>
+  </div>
+  <div class="content">
+      <div class="box">
+           
+          <div class="courceicon"><i class="fa-solid fa-book"></i></div>
+          <div class="courcename">
+              Bachelor of Business <br />Administration(BBA)
+          </div>
+          <div class="time">
+              <ct>8 semester</ct> | <ct> 4 year</ct> | <ct>120 Credits</ct>
+          </div>
+          <div class="admission"><a href="coursebba.html">View Course Page</a></div>
+      </div>
+      <div class="box">
+         
+          <div class="courceicon"><i class="fa-solid fa-book"></i></div>
+          <div class="courcename">
+              BSc. Computer System and  <br />Information Technology(BSc.IT)
+          </div>
+          <div class="time">
+              <ct>8 semester</ct> | <ct> 4 year</ct> | <ct>120 Credits</ct>
+          </div>
+          <div class="admission"><a href="courceit.html">View Course Page</a></div>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="highlights">
+  <div class="vg-topic">
+    <div class="vg-topic-content">VG Notice</div>
+  </div>
+  <div class="highlights-content">
+    
+    <div class="vgcontent">
+      <div class="header">
+          <span class="subject">Subject: Bridging the Knowledge Gap</span>
+          <span class="updated-time">
+              <i class="fa-solid fa-clock"></i> Updated Time: <span class="date">October 24, 2024</span>
+          </span>
+      </div>
+      <div class="subtopic" ><o>Bridging the knowledge gap</o></div>
+      <p class="vg-paragraph" style="font-size: 18px;">
+          You can talk about each company highlight more extensively in short
+          but impactful articles. This is a great way to surface salient
+          points and accompany them with key visuals.
+      </p>
+      <br />
+      <p class="vg-paragraph" style="font-size: 18px;">
+          Some prompts that can help: What is the main achievement? What did
+          it take to reach the goal? What is the impact of the outcome on the
+          business, the people involved, and the industry as a whole?
+      </p>
+      <button class="download-button">Download Notice</button>
+  </div>
+  
+  <div class="vg-image">
+    <img src="image/appli.jpg" alt="image" />
+  </div>
+
+  </div>
+</div>
+
+
+
+
+
+<!-- Director portion starts here -->
+<div class="dir">
+  <div class="video-content">
+      <video controls autoplay muted src="videos/director.mp4" class="mp4"></video>
+  </div>
+
+  <div class="about-director">
+      <div class="director-info">
+          <div class="image-circle">
+              <img src="image/akdas.jpg" alt="Director's Image">
+          </div>
+          <div class="text-info">
+              <div class="director"><o>Message From the desk of Director</o></div>
+              <div class="director-name"><bl>Mr. KD Das</bl></div>
+          </div>
+      </div>
+      <p class="paragraph-director" style="font-size: 18px;">
+        Welcome to VG College! We started this institution with a vision to fill a significant gap in 
+         Nepal—a need for a college that not only teaches business and technology but does so in a way that
+          prepares students to be leaders in the ever-changing global landscape. Our founders, drawing from 
+          deep experience in both academia and the corporate world, wanted to build a place where students aren’t 
+          just educated but are truly prepared to make an impact.
+
+      </p>
+      <p class="paragraph-director">
+      </p>
+      <p class="paragraph-director" style="font-size: 18px;">
+        At VG College, our programs in IT and management go beyond theory, focusing on real-world skills that 
+        give students a competitive edge. We believe that true learning comes from a blend of innovation, practical
+         application, and critical thinking. Our mission is to nurture talent in an environment that values 
+         excellence, leadership, and integrity. As you embark on your journey here, know that you are not just
+          joining a college—you’re becoming part of a community committed to making a difference in Nepal and the
+           world. We’re excited to support you every step of the way as you build your future with us.
+      </p>
+  </div>
+</div>
+
+    
+    <!--admission content starts here-->
+    <!-- admission content starts here -->
+<div class="admit">
+  <div class="admit-header">
+      <div class="admit-header-content">Admission</div>
+  </div>
+  <div class="backimage">
+      <div class="backimage-content">
+          <div class="admit-box admit1">
+              <div class="t1">TOTAL COURSES</div>
+              <div class="t2"><o>2</o></div>
+          </div>
+          <div class="admit-box admit2">
+              <div class="t1">QUOTA/COURSE</div>
+              <div class="t2"><o>40</o></div>
+          </div>
+          <div class="admit-box admit3">
+              <div class="t1">SCHOLARSHIP QUOTA</div>
+              <div class="t2"><o>10</o></div>
+          </div>
+      </div>
+      <div class="getstarted">
+          <a href="#" class="getstarted-icon">GET STARTED</a>
+      </div>
+  </div>
+</div>
+
+
+
+
+    <!--Our mission content starts here-->
+    <div class="mission" style="background-color: rgb(255, 192, 169); margin:0; padding: 30px;">
+      <div class="mission-content">
+        <div class="ourmission">
+          <o><bl>Our </bl>Mission</o>
+        </div>
+        <div class="mission-exp">
+          <p style="text-align: justify;">
+            VG College is dedicated to cultivating leaders in business and technology who are equipped to 
+            navigate the complexities of the global economy. Our mission is to deliver a transformative education 
+            experience that balances academic rigor with real-world skills, ensuring our students are ready to make 
+            meaningful contributions in their careers and communities. Located in Eastern Nepal, VG College is 
+            designed to address the need for an institution that bridges theory and practical application, preparing 
+            graduates who are adaptable, innovative, and grounded in strong ethical values.
+
+
+          </p>
+        <p style="text-align: justify;">
+          We are committed to fostering a research-driven environment that encourages curiosity, critical thinking, 
+          and continuous learning. Our programs in IT and management are carefully developed to align with industry 
+          demands, integrating emerging trends with a solid foundation in core principles.  Our mission is to make 
+          VG College a center of educational excellence that not only prepares students for success but also empowers them
+           to positively impact Nepal and the world.
+          </p>
+        </div>
+      </div>
+      <div class="mission-video">
+        <video autoplay loop muted plays-inline class="background-clips">
+          <source src="videos/mission.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="gallery">
+      <div class="vg-gallery"><o>VG </o><bl>Gallery</bl></div>
+      <div class="vg-gallery-content">
+        <div class="vg-gallery-content1">
+          <div class="vg-gallery-image">
+            <img src="image/gallery2.jpeg" alt="1" />
+          </div>
+         
+          <div class="vg-gallery-exp">
+            <p>Student in a library</p>
+          </div>
+        </div>
+        <div class="vg-gallery-content2">
+          <div class="vg-gallery-image">
+            <img src="image/gallery3.jpg" alt="2" />
+          </div>
+          
+          <div class="vg-gallery-exp">
+            <p>Student attending Orientation Session</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="activity">
+      <div class="ouractivity">
+        <p><bl>Our</bl> <o>Activities</o></p>
+      </div>
+      <div class="activity-content">
+        <div class="activity-content1 sport-activity">
+          <div class="activity-topic">Games and Sport</div>
+          <div class="readhere">
+            
+          </div>
+        </div>
+        <div class="activity-content1 project-activity">
+          <div class="activity-topic">Project and Practical</div>
+          <div class="readhere">
+            
+          </div>
+        </div>
+        <div class="activity-content1 training-activity">
+          <div class="activity-topic">Training classes</div>
+          <div class="readhere">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+    <div class="ourteam">
+      <div class="ourteam-header">
+        <div class="ourteam-header-content">Our Team</div>
+      </div>
+      <div class="ourteam-content">
+        <div class="our-team-content1">
+          <div class="image">
+            <img class="image-content" src="image/vggallery1.jpg" alt="image" />
+          </div>
+          <div class="our-content23">
+            <div class="our-content2">
+              <div class="Name">NAME</div>
+              <div class="position">POSITION</div>
+            </div>
+            <div class="our-content3">
+              <div class="icons-content">
+                <a href="#" class="icon-content1"
+                  ><i class="fa-brands fa-whatsapp"></i
+                ></a>
+                <a href="#" class="icon-content1"
+                  ><i class="fa-solid fa-phone"></i
+                ></a>
+                <a href="#" class="icon-content1"
+                  ><i class="fa-regular fa-envelope"></i
+                ></a>
+              </div>
+              <div class="send-message">
+                <a href="#" class="send-message-content">SEND MESSAGE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="our-team-content1">
+          <div class="image">
+            <img class="image-content" src="image/vggallery1.jpg" alt="image" />
+          </div>
+          <div class="our-content23">
+            <div class="our-content2">
+              <div class="Name">NAME</div>
+              <div class="position">POSITION</div>
+            </div>
+            <div class="our-content3">
+              <div class="icons-content">
+                <a href="#" class="icon-content1"
+                  ><i class="fa-brands fa-whatsapp"></i
+                ></a>
+                <a href="#" class="icon-content1"
+                  ><i class="fa-solid fa-phone"></i
+                ></a>
+                <a href="#" class="icon-content1"
+                  ><i class="fa-regular fa-envelope"></i
+                ></a>
+              </div>
+              <div class="send-message">
+                <a href="#" class="send-message-content">SEND MESSAGE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="our-team-content1">
+          <div class="image">
+            <img class="image-content" src="image/vggallery1.jpg" alt="image" />
+          </div>
+          <div class="our-content23">
+            <div class="our-content2">
+              <div class="Name">NAME</div>
+              <div class="position">POSITION</div>
+            </div>
+            <div class="our-content3">
+              <div class="icons-content">
+                <a href="#" class="icon-content1"
+                  ><i class="fa-brands fa-whatsapp"></i
+                ></a>
+                <a href="#" class="icon-content1"
+                  ><i class="fa-solid fa-phone"></i
+                ></a>
+                <a href="#" class="icon-content1"
+                  ><i class="fa-regular fa-envelope"></i
+                ></a>
+              </div>
+              <div class="send-message">
+                <a href="#" class="send-message-content">SEND MESSAGE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="our-team-content1">
+          <div class="image">
+            <img class="image-content" src="image/vggallery1.jpg" alt="image" />
+          </div>
+          <div class="our-content23">
+            <div class="our-content2">
+              <div class="Name">NAME</div>
+              <div class="position">POSITION</div>
+            </div>
+            <div class="our-content3">
+              <div class="icons-content">
+                <a href="#" class="icon-content1"
+                  ><i class="fa-brands fa-whatsapp"></i
+                ></a>
+                <a href="#" class="icon-content1"
+                  ><i class="fa-solid fa-phone"></i
+                ></a>
+                <a href="#" class="icon-content1"
+                  ><i class="fa-regular fa-envelope"></i
+                ></a>
+              </div>
+              <div class="send-message">
+                <a href="#" class="send-message-content">SEND MESSAGE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="subscribe">
+      <div class="subscribe-content">
+        <div class="subscribe-video">
+          <video autoplay  controls muted class="subscribe-clips">
+            <source src="videos/video2.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="subscribe-form">
+        <div class="subscribe-text">
+          <div class="par sub"><p><bl>Subscribe To</bl><o>VG <bl>College</bl></o></p></div>
+          <div class="par nf">Don't Miss Out Any Notification</div>
+          <div class="get-email par">
+            <input type="text" name="" placeholder="Enter your Email">
+            <div class="subscribe-icon">
+              <a class="subscribe-click" href="#">SUBSCRIBE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+
+    
+      <div class="info">
+        <div class="contact-info">
+          <div class="touch"><p><bl>GET <o>IN </o> TOUCH</bl></p></div>
+          <div class="location info-icon">
+            <div class="location-icon ic"><i class="fa-solid fa-location-dot "></i></div>
+            <div class="location-no">Biratnagar-3,Nepal</div>
+          </div>
+          <div class="phone info-icon">
+            <div class="phone-icon ic"><i class="fa-solid fa-phone  "></i></div>
+            <div class="phone-no">(+977) 476346347</div>
+          </div>
+          <div class="mail info-icon">
+            <div class="mail-icon ic"><i class="fa-regular fa-envelope "></i></div>
+            <div class="mail-no">abc123@gmail.com</div>
+          </div>
+          <div class="follow-us">
+              <div class="fb"><a href="#"><i class="fa-brands fa-square-facebook"></i></a></div>
+              <div class="insta"><a href="#"><i class="fa-brands fa-square-instagram"></i></a></i></div>
+              <div class="x"><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></i></div>
+          </div>
+        </div>
+        <div class="link-info">
+          <div class="link-info-header"><BL>QUICK </BL><o>LINKS</o></div>
+          <div class="link-info-content">
+            <a href="index.html" class="icon-link">home</a>
+            <a href="cource.html" class="icon-link">cource</a>
+            <a href="aboutus.html" class="icon-link">About us</a>
+            <a href="contactus.html" class="icon-link">Contact us</a>
+            <a href="noticevg.html" class="icon-link">Notice</a>
+        </div>
+        </div>
+        <div class="login-info">
+          <div class="login-header"><p><bl>ADMIN </bl><o>LOGIN</o></p></div>
+          <div class="admin-box">
+            <input type="text" name="" placeholder="Email">
+            <input type="password" name="" placeholder="Password">
+            <div class="login"><a href="#" class="login-text">LOGIN</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+    <div class="footer-content">
+        <div class="map">
+            <div class="map-content">
+                <img src="image/map-content.png" alt="map">
+            </div>
+        </div>
+        <div class="image-footer">
+            <div class="image-content-footer">
+                <img src="image/collegelogo.png" alt="college logo">
+            </div>
+        </div>
+
+        <div class="image-footer">
+          <div class="image-content-footer">
+              <img src="image/collegelogo.png" alt="college logo">
+          </div>
+      </div>
+
+      <div class="image-footer">
+        <div class="image-content-footer">
+            <img src="image/collegelogo.png" alt="college logo">
+        </div>
+    </div>
+
+    <div class="image-footer">
+      <div class="image-content-footer">
+          <img src="image/collegelogo.png" alt="college logo">
+      </div>
+  </div>
+
+  <div class="image-footer">
+    <div class="image-content-footer">
+        <img src="image/collegelogo.png" alt="college logo">
+    </div>
+</div>
+
+    </div>
+    <div class="footer-text">
+        <div class="image-text">
+            &copy; VG COLLEGE, ALL RIGHTS RESERVED. DESIGNED BY BRANDWAVE
+        </div>
+    </div>
+</div>
+
+
+  </body>
+  <script src="script.js"></script>
+</ht    ml>
